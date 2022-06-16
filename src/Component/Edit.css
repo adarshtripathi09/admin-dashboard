@@ -1,0 +1,9 @@
+.col-md-3.status {
+    margin-top: 62px;
+    display: flex;
+    margin-left: 56px;
+}
+label.form-label.status_label {
+    padding-top: 7px;
+   
+}

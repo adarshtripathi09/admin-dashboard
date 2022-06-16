@@ -1,0 +1,39 @@
+.card-header,
+.card-body {
+    padding: 1rem;
+}
+.heading {
+    color: #394956;
+}
+.card-header {
+    display: flex;
+    color: #394956;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-text);
+    text-transform: uppercase;
+    transition: var(--transition) !important;
+}
+
+.card-header .heading {
+    color: #394956;
+}
+
+.card-header button {
+    background: var(--main-color);
+    border-radius: 10px;
+    color: var(--off-white);
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--main-color);
+}
+
+.card-header button:hover {
+    background: transparent;
+    color: var(--off-white);
+    border: 1px solid #fff;
+}
+
+.card-header button:hover span {
+    transform: translatex(5px);
+}

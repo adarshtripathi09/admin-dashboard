@@ -1,0 +1,122 @@
+body.light .sidebar {
+    
+    box-shadow: 5px 0 20px rgba(0, 0, 0, .7);
+    z-index: 999;
+}
+
+.light .sidebar li a span {
+    font-size: 1.5rem;
+    filter: brightness(140%);
+    background: var(--orange);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+body.light .sidebar-menu a:hover {
+    background: transparent;
+    color: #0ff;
+    padding-top: .7rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #0ff;
+}
+/* ===========SIDEBAR========== */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .3);
+    z-index: 100;
+    transition: width 300ms;
+}
+
+.sidebar-brand {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    /* 	color:#fff; */
+}
+
+.sidebar-brand span {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+
+.sidebar-brand h2 span:last-child,
+.sidebar-brand h2 span:first-child {
+    filter: brightness(140%);
+    background: var(--pink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+}
+
+.sidebar-menu a {
+    padding-left: 1rem;
+    display: block;
+    color: #394956;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid #394956;
+    /* width: 100%; */
+    text-align: center;
+    margin-right: 30px;
+}
+.sidebar-menu a:hover::before {
+   
+}
+
+.sidebar-menu a:hover {
+    border: 1px solid #193953;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    transform: translatey(5px);
+}
+
+.sidebar-menu {
+    margin-top: 1rem;
+    
+}
+
+#nav-toggle:checked+.sidebar {
+    width: 70px;
+}
+
+#nav-toggle:checked+.sidebar {
+    width: 70px;
+}
+
+#nav-toggle:checked+.sidebar .sidebar-brand,
+#nav-toggle:checked+.sidebar li {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+#nav-toggle:checked+.sidebar li a {
+    padding-left: 0rem;
+}
+
+#nav-toggle:checked+.sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked+.sidebar li a span:last-child {
+    display: none;
+}
+
+/* ===========SIDEBAR========== */
